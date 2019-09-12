@@ -21,7 +21,7 @@ app.use(
 );
 
 mongoose.connect(
-  "mongodb+srv://amogh123:amogh123@amogh-first-cluster-vdru3.mongodb.net/test?retryWrites=true&w=majority",
+  `mongodb+srv://amogh123:amogh123@amogh-first-cluster-vdru3.mongodb.net/test?retryWrites=true&w=majority`,
   { useNewUrlParser: true }
 );
 mongoose.connection.once("open", () => {
